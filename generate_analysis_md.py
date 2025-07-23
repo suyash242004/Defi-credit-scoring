@@ -9,14 +9,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
+import os
+os.makedirs("Output Files", exist_ok=True)
+
 
 def generate_analysis_md():
     """Generate comprehensive analysis.md file"""
     
     # Load the results
     try:
-        scores_df = pd.read_csv('wallet_credit_scores.csv')
-        detailed_df = pd.read_csv('detailed_wallet_analysis.csv')
+        scores_df = pd.read_csv('Output Files/wallet_credit_scores.csv')
+        detailed_df = pd.read_csv('Output Files/detailed_wallet_analysis.csv')
     except FileNotFoundError:
         print("Error: Run the main credit scoring script first to generate the CSV files.")
         return
@@ -118,8 +121,8 @@ The score distribution shows that:
 {_generate_positive_indicators(high_score_wallets)}
 
 #### Success Patterns:
-- **Zero Liquidations**: {(high_score_wallets['liquidation_count'] == 0).sum()} wallets ({(high_score_wallets['liquidation_count'] == 0).sum()/len(high_score_wallets)*100:.1f}%) have never been liquidated
-- **Excellent Repayment**: {(high_score_wallets['repayment_ratio'] >= 0.8).sum()} wallets ({(high_score_wallets['repayment_ratio'] >= 0.8).sum()/len(high_score_wallets)*100:.1f}%) have 80%+ repayment ratios
+- **Zero Liquidations**: {(high_score_wallets['liquidation_count'] == 0).sum()} wallets ({((high_score_wallets['liquidation_count'] == 0).sum() / len(high_score_wallets) * 100 if len(high_score_wallets) > 0 else 0):.1f}%)
+- **Excellent Repayment**: {(high_score_wallets['repayment_ratio'] >= 0.8).sum()} wallets ({((high_score_wallets['repayment_ratio'] >= 0.8).sum() / len(high_score_wallets) * 100 if len(high_score_wallets) > 0 else 0):.1f}%)
 - **Consistent Activity**: Regular but not excessive transaction patterns
 - **Portfolio Diversity**: Use multiple assets and protocol features
 
@@ -222,7 +225,7 @@ The system provides a solid foundation for DeFi credit assessment and can be ext
 """
 
     # Write the analysis file
-    with open('analysis.md', 'w') as f:
+    with open('Output Files/analysis.md', 'w', encoding='utf-8') as f:
         f.write(md_content)
     
     print("Generated analysis.md successfully!")

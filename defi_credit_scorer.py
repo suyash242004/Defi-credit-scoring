@@ -14,6 +14,10 @@ from collections import defaultdict
 import warnings
 warnings.filterwarnings('ignore')
 
+import os
+os.makedirs("Output Files", exist_ok=True)
+
+
 class DeFiCreditScorer:
     def __init__(self):
         self.raw_data = None
@@ -312,7 +316,7 @@ class DeFiCreditScorer:
         plt.title('Score vs Liquidations')
         
         plt.tight_layout()
-        plt.savefig('score_analysis.png', dpi=300, bbox_inches='tight')
+        plt.savefig('Output Files/score_analysis.png', dpi=300, bbox_inches='tight')
         plt.show()
         
         # Generate analysis statistics
@@ -353,13 +357,13 @@ class DeFiCreditScorer:
     
     def save_results(self):
         """Save wallet scores to CSV"""
-        output_file = 'wallet_credit_scores.csv'
+        output_file = 'Output Files/wallet_credit_scores.csv'
         self.wallet_scores.to_csv(output_file, index=False)
         print(f"Saved results to {output_file}")
         
         # Also save detailed features for analysis
         detailed_results = self.wallet_features.merge(self.wallet_scores, on='wallet')
-        detailed_results.to_csv('detailed_wallet_analysis.csv', index=False)
+        detailed_results.to_csv('Output Files/detailed_wallet_analysis.csv', index=False)
         print("Saved detailed analysis to detailed_wallet_analysis.csv")
     
     def run_complete_analysis(self, json_file_path):
@@ -381,6 +385,7 @@ def main():
         sys.exit(1)
     
     json_file_path = sys.argv[1]
+    # json_file_path = "Input_File/user-wallet-transactions.json"
     
     # Initialize and run the credit scorer
     scorer = DeFiCreditScorer()
