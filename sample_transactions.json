@@ -1,0 +1,53 @@
+[
+  {
+    "_id": {
+      "$oid": "681d38fed63812d4655f571a"
+    },
+    "userWallet": "0x00000000001accfa9cef68cf5371a23025b6d4b6",
+    "network": "polygon",
+    "protocol": "aave_v2",
+    "txHash": "0x695c69acf608fbf5d38e48ca5535e118cc213a89e3d6d2e66e6b0e3b2e8d4190",
+    "timestamp": 1629178166,
+    "action": "deposit",
+    "actionData": {
+      "type": "Deposit",
+      "amount": "2000000000",
+      "assetSymbol": "USDC",
+      "assetPriceUSD": "0.9938318274296357543568636362026045"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "681d38fed63812d4655f571b"
+    },
+    "userWallet": "0x00000000001accfa9cef68cf5371a23025b6d4b6",
+    "network": "polygon",
+    "protocol": "aave_v2",
+    "txHash": "0x695c69acf608fbf5d38e48ca5535e118cc213a89e3d6d2e66e6b0e3b2e8d4191",
+    "timestamp": 1629278166,
+    "action": "borrow",
+    "actionData": {
+      "type": "Borrow",
+      "amount": "1000000000",
+      "assetSymbol": "USDC",
+      "assetPriceUSD": "0.9938318274296357543568636362026045"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "681d38fed63812d4655f571c"
+    },
+    "userWallet": "0x11111111111accfa9cef68cf5371a23025b6d4b7",
+    "network": "polygon",
+    "protocol": "aave_v2",
+    "txHash": "0x695c69acf608fbf5d38e48ca5535e118cc213a89e3d6d2e66e6b0e3b2e8d4192",
+    "timestamp": 1629378166,
+    "action": "liquidationcall",
+    "actionData": {
+      "type": "LiquidationCall",
+      "amount": "500000000",
+      "assetSymbol": "USDC",
+      "assetPriceUSD": "0.9938318274296357543568636362026045"
+    }
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "_id": {
+    "$oid": "6818996bba49fc91cf2f0b87"
+  },
+  "userWallet": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0x633cb59019f79595594aea0c98738e1e930931af533724fa8218c5904accd9d4",
+  "logId": "0x633cb59019f79595594aea0c98738e1e930931af533724fa8218c5904accd9d4_Borrow",
+  "timestamp": 1618692659,
+  "blockNumber": 1618692659,
+  "action": "borrow",
+  "actionData": {
+    "type": "Borrow",
+    "amount": "1670414250000000",
+    "assetSymbol": "WETH",
+    "assetPriceUSD": "2387.240000000002341309502400002296",
+    "poolId": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+    "userId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+    "borrowRateMode": null,
+    "borrowRate": "53522406186118116607590606",
+    "variableTokenDebt": "0",
+    "stableTokenDebt": "0",
+    "callerId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-05T10:56:45.185Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T10:56:45.185Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6818996bba49fc91cf2f0bce"
+  },
+  "userWallet": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0xabfad9144e029e40b0a01e6cec86ba65c8aa3a7a25fc09712f1b1f79afa748d2",
+  "logId": "0xabfad9144e029e40b0a01e6cec86ba65c8aa3a7a25fc09712f1b1f79afa748d2_Deposit",
+  "timestamp": 1618693401,
+  "blockNumber": 1618693401,
+  "action": "deposit",
+  "actionData": {
+    "type": "Deposit",
+    "amount": "2800000000000000000",
+    "assetSymbol": "DAI",
+    "assetPriceUSD": "1.003189865200000983888492193552965",
+    "poolId": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+    "userId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-05T10:56:45.186Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T10:56:45.186Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681899e3ba49fc91cf2f3195"
+  },
+  "userWallet": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0x5cbc6d79b3ed5ae0fd5d29d2736e6c551d936bbe1ad6981e487cf35c5fe3251a",
+  "logId": "0x5cbc6d79b3ed5ae0fd5d29d2736e6c551d936bbe1ad6981e487cf35c5fe3251a_Repay",
+  "timestamp": 1618785851,
+  "blockNumber": 1618785851,
+  "action": "repay",
+  "actionData": {
+    "type": "Repay",
+    "amount": "2384043946051385",
+    "assetSymbol": "WETH",
+    "assetPriceUSD": "2243.490000000004027602987600007231",
+    "poolId": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+    "userId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+    "useATokens": false,
+    "repayerId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-05T10:58:45.739Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T10:58:45.739Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681899e3ba49fc91cf2f3198"
+  },
+  "userWallet": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0x8176bec3ef48884cd4df300702a476ccf42cfd50cfee5a06483dc4717d1ddf70",
+  "logId": "0x8176bec3ef48884cd4df300702a476ccf42cfd50cfee5a06483dc4717d1ddf70_RedeemUnderlying",
+  "timestamp": 1618785885,
+  "blockNumber": 1618785885,
+  "action": "redeemunderlying",
+  "actionData": {
+    "type": "RedeemUnderlying",
+    "amount": "12801701836026314877",
+    "assetSymbol": "DAI",
+    "assetPriceUSD": "1.010961463800001814918458272315258",
+    "poolId": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+    "userId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d",
+    "toId": "0x03972ff1fbbc42f532dbfc16e0bfbeec5cb9007d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-05T10:58:45.739Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T10:58:45.739Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681cfad3d63812d4654930b4"
+  },
+  "userWallet": "0x0398b107763c8e7fae5183241d383440ea3623da",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0x10f14f567ede017bd80c559427652ba6d99dbc613cc562160703fd1319f00192",
+  "logId": "0x10f14f567ede017bd80c559427652ba6d99dbc613cc562160703fd1319f00192_LiquidationCall",
+  "timestamp": 1626821242,
+  "blockNumber": 1626821242,
+  "action": "liquidationcall",
+  "actionData": {
+    "type": "LiquidationCall",
+    "amount": "0",
+    "assetSymbol": "",
+    "assetPriceUSD": "0",
+    "poolId": "",
+    "userId": "0x0398b107763c8e7fae5183241d383440ea3623da",
+    "liquidatorId": "0xd70e701117df61f693ed86348b6a59e1a08cce11",
+    "collateralAmount": "26488605",
+    "collateralAssetPriceUSD": "1.002572255813101832119965941165672",
+    "principalAmount": "25012662333664636839",
+    "borrowAssetPriceUSD": "1.011173207618474127403885262144203",
+    "collateralReserveId": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "collateralReserveSymbol": "USDC",
+    "principalReserveId": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+    "principalReserveSymbol": "DAI"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-08T18:41:24.560Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T18:41:24.560Z"
+  }
+},
